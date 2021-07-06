@@ -465,6 +465,7 @@ items:
     kind: CleanUpOperator
     metadata:
       name: cleanupoperator-netapp
+      namespace: "system"
     spec:
       resourceName: "netapp-trident"
       namespace: "trident"
