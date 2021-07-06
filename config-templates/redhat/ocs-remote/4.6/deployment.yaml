@@ -347,6 +347,7 @@ items:
     kind: CleanUpOperator
     metadata:
       name: cleanupoperator-ocs-remote
+      namespace: "system"
     spec:
       resourceName: "ocs-remote"
       namespace: "openshift-storage"
