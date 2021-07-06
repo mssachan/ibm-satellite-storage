@@ -343,3 +343,11 @@ items:
          - "{{{ item }}}"
          {{/worker-nodes}}
        billingType: "{{ billing-type }}"
+  - apiVersion: cleanup.ibm.com/v1
+    kind: CleanUpOperator
+    metadata:
+      name: cleanupoperator-ocs-remote
+    spec:
+      resourceName: "ocs-remote"
+      namespace: "openshift-storage"
+      version: "4.6" 
