@@ -461,3 +461,11 @@ items:
       kind: Role
       name: trident-kubectl
       apiGroup: rbac.authorization.k8s.io
+  - apiVersion: cleanup.ibm.com/v1
+    kind: CleanUpOperator
+    metadata:
+      name: cleanupoperator-netapp
+    spec:
+      resourceName: "netapp-trident"
+      namespace: "trident"
+      version: "20.07"
